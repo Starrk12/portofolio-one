@@ -24,7 +24,7 @@ body {
 
 }
 ul{
-    list-style-type: none;
+    list-style: none;
 }
 .section
 {
@@ -107,7 +107,7 @@ ul{
     display: block;
     border-bottom: 1px solid var(--bg-black-50);
     color: var(--text-black-900);
-    padding: 5px 15px;
+    padding: 10px 25px;
 }
 .aside .nav li a.active {
     color: var(--skin-color);
