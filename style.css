@@ -4,7 +4,7 @@
     --bg-black-900: #f2f2fc;
     --bg-black-100: #fdf9ff;
     --bg-black-50: #e8dfec;
-    --text-black-900: #302e4d;
+    --text-black-900: #060609;
     --text-black-700: #504e70;
 }
 body {
@@ -26,6 +26,7 @@ body {
 ul{
     list-style: none;
 }
+
 .section
 {
     background: var(--bg-black-900);
@@ -108,6 +109,9 @@ ul{
 }
 .btn:hover {
     transform: scale(1.05);
+}
+.shadow-dark {
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 /* aside */
 .aside {
@@ -320,8 +324,144 @@ h3.my-profession {
     color: var(--text-black-700);
 }
 .about .about-content .personal-info {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    margin-top: 40px;
+    align-items: center;
+}
+.about .about-content .skills {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+
+}
+.about .about-content .personal-info .info-item p
+{
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 16px;
+    color:  var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+}
+.about .about-content .personal-info .info-item p span{
+    font-weight: 900;
+    font-size: large;
+    color: var(--text-black-700);
+    margin-left: 4px;
+    display: inline-block;
+}
+.about .about-content .personal-info .buttons {
+    margin-top:  30px;
+}
+.about .about-content .personal-info .buttons .btn {
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.about .about-content .skills .skill-item .skill-logos {
+    display: flex;
+    flex-direction: row;
+    justify-content:  space-around;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.about .about-content .skill-logos .language {
+    width: 100px;
+    height: 100px;
+    flex: 0 0 auto;
+    
+   
+}
+/*Portofolio*/
+#button-div {
+    position: absolute;
+    display: none;
+}
+.portfolio .container {
+    padding-bottom: 40px;
+}
+.portfolio .portofolio-heading {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.portfolio .portfolio-heading h2 {
+    color: var(--text-black-900);
+    font-weight: 500;
+
+}
+.portfolio .portfolio-item {
+    
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+}
+.portfolio .portfolio-item-inner {
+    border: 6px solid var(--bg-black-100);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+/*will continue later*/
+.portfolio .portfolio-item-inner .portfolio-img img {
+    width: 100%;
+    display: block;
+}
+.portfolio .portfolio-item-inner img:hover~#button-div {
+    display: flex;
+    gap: 0.5cm;
+
+}
+/*end*/
+
+/* contact */
+.contact-title {
+    color: var(--skin-color);
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.contact-sub-title {
+    color: var(--text-black-900);
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 60px;
+}
+.contact .contact-info-item {
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.contact .contact-info-item .icon {
+    display: inline-block;
+}
+.contact .contact-info-item .icon .fa {
+    font-size: 25px;
+    color: var(--skin-color);
+}
+.contact .contact-info-item h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+    margin: 15px 0 5px;
+}
+.contact .contact-info-item p {
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+    font-weight: 400;
+}
+.contact .contact-form {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contact .contact-form .col-6 {
     flex: 0 0 50%;
     max-width: 50%;
-    background-color: red;
-
 }
